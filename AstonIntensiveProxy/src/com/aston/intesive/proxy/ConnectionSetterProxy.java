@@ -5,12 +5,14 @@ public class ConnectionSetterProxy implements ConnectionSet {
 	ConnectionSetter setter = new ConnectionSetter();
 
 	@Override
-	public void setConnection(String password) {
+	public boolean setConnection(String password) {
 
 		if (password.equals("oooo")) {
 			setter.setConnection(password);
+			return true;
 		} else {
 			System.out.println("Illegal Password");
+			return false;
 		}
 
 	}

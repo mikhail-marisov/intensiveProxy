@@ -2,6 +2,6 @@ package com.aston.intesive.proxy;
 
 public interface ConnectionSet {
 	
-	public void setConnection(String password);
+	public boolean setConnection(String password);
 
 }
